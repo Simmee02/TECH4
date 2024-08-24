@@ -1,0 +1,19 @@
+captions = [
+    {"file_name": "image1.jpg", "text": "This is a damaged block.The blocks are overhanging due to trees, creating a walking hazard."},
+    {"file_name": "image2.jpg", "text": "This is a damaged block.The color of the Braille blocks has peeled off, making it difficult to distinguish between the colors of the Braille blocks and the sidewalk."},
+    {"file_name": "image3.jpg", "text": "This is a damaged block.The sidewalk near the Braille block is damaged, making walking dangerous."},
+    {"file_name": "image4.jpg", "text": "This is a damaged block.The sidewalks are damaged, making walking dangerous."},
+    {"file_name": "image5.jpg", "text": "This is a damaged block.The sidewalks are damaged, making walking dangerous."},
+    {"file_name": "image6.jpg", "text": "This is a damaged block.The Braille block is damaged and is not functioning as a Braille block."},
+    {"file_name": "image7.jpg", "text": "The sidewalks are damaged, making walking dangerous."},
+    {"file_name": "image8.jpg", "text": "The sidewalks are damaged, making walking dangerous."}
+]
+
+
+import json
+
+# 캡션 데이터를 JSON 파일로 저장
+with open("captions.json", "w", encoding="utf-8") as f:
+    json.dump(captions, f, ensure_ascii=False, indent=4)
+
+
